@@ -15,10 +15,8 @@ As far as some code was found in the GitHub, firstly we want to test it and find
 
 Then there is an idea to move some objects. For example, when sentence is "Mike throws a ball to Jenny" ball is moving from Mike to Jenny. 
 
-In the end it could be done text-to-image work. For example, when ball appears in the Jenny's hands the output sentence is "Now Jenny holds ball"
+Final step is to generate from the output image a comic-book style picture. We propose to creater another GAN for this task.
+
+In the end it could be done text-to-image work. For example, when ball appears in the Jenny's hands the output sentence is "Now Jenny holds ball".
 
 But to do all of this work we firstly have to be sure, that primary scripts from Git are workable.
-
-
-
-
