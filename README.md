@@ -20,3 +20,61 @@ Final step is to generate from the output image a comic-book style picture. We p
 In the end it could be done text-to-image work. For example, when ball appears in the Jenny's hands the output sentence is "Now Jenny holds ball".
 
 But to do all of this work we firstly have to be sure, that primary scripts from Git are workable.
+
+# Update (05.04.2020)
+What do we have till now:
+- [x] literature review
+- [x] Text2Scene algorithm (NOT from paper)
+- [ ] Moving objects
+- [x] Comic-book style picture
+- [ ] Image-to-text work
+
+## Problems
+Unfortunately, we couldn't run git from source paper. It happened because of (1) too slow internet to download around 100 Gb of info and (2) there is no instruction about how to run the code.
+
+Text-to-scene algorithm was done from scratch by Marina. There is no Neural Networks, but, was done attempt to save the idea of authors of paper (make a code from text -> from code take image -> place and same in the background). Because of this unexpected task, following moving objects wasn't done yet.
+
+However, by Albert was done GAN, making comic-book style of pictures. Till now, it needs some debugging process, but already we have some good results.
+
+You can check our git: [https://github.com/UralmashFox/CV_Project](https://github.com/UralmashFox/CV_Project)
+there is "CV_project.ipynb" file. All you need is to open it (for example in collab), in the last cell input the desired text:
+![](https://i.imgur.com/vwNFxII.png)
+
+For example, input
+
+*It was sunny day. Happy Mike was sitting in the park and playing with ball. There was a snake and Jenny was worried, she was wearing silly hat*
+
+will give you a following picture:
+
+![](https://i.imgur.com/Cl1tTJq.png)
+
+if you are going to change text, from second time run ONLY the last cell, not all the program.
+
+Important issues:
+1) try to build picture in following steps for each sentence: 
+sky objects -> ground objects -> person + mood + hat + activity -> animals.
+In case to not overlap small objects by big
+2) follow syntax rules of English
+3) you can input any amount of sentences with any amount of words
+4) NOT input sentence with only hat or activity
+
+Some examples:
+
+*There is a bear*
+
+![](https://i.imgur.com/IiVY1xI.png)
+
+*The rocket was flying in the sky and Jenny was excited*
+
+![](https://i.imgur.com/4o2hjQx.png)
+
+*It was a storm. Despite of this, kids were in the park and playing soccer. Mike was sitting near sand. Jenny was a happy princes, she was kicking soccer*
+
+![](https://i.imgur.com/ED3o9OU.png)
+
+*On the table there is a drink and hotdog*
+
+![](https://i.imgur.com/d4954yd.png)
+
+The next step will be either finding out how to make the algorithm via networks or moving objects and making GIF file.
+
