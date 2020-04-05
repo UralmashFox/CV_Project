@@ -36,6 +36,7 @@ Text-to-scene algorithm was done from scratch by Marina. There is no Neural Netw
 
 However, by Albert was done GAN, making comic-book style of pictures. Till now, it needs some debugging process, but already we have some good results.
 
+## Results
 You can check our git: [https://github.com/UralmashFox/CV_Project](https://github.com/UralmashFox/CV_Project)
 there is "CV_project.ipynb" file. All you need is to open it (for example in collab), in the last cell input the desired text:
 ![](https://i.imgur.com/vwNFxII.png)
@@ -50,7 +51,7 @@ will give you a following picture:
 
 if you are going to change text, from second time run ONLY the last cell, not all the program.
 
-Important issues:
+## Important issues
 1) try to build picture in following steps for each sentence: 
 sky objects -> ground objects -> person + mood + hat + activity -> animals.
 In case to not overlap small objects by big
@@ -58,7 +59,7 @@ In case to not overlap small objects by big
 3) you can input any amount of sentences with any amount of words
 4) NOT input sentence with only hat or activity
 
-Some examples:
+## Some examples
 
 *There is a bear*
 
