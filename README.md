@@ -87,5 +87,5 @@ Also when you run the code, in the end there is a cartoonized image. For example
 
 Due to computation limits cartoonizer part represented as temporary approach required for demo. It is supposed to be developed in the next time.
 
-We can see that after cartoonizing image looks more painted by hand, the result that we wanted it achieved.
+We can see that after cartoonizing image looks more painted by hand, the result that we wanted is achieved.
 
