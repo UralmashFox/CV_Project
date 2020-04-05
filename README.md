@@ -81,3 +81,11 @@ In case to not overlap small objects by big
 
 The next step will be either finding out how to make the algorithm via networks or moving objects and making GIF file.
 
+Also when you run the code, in the end there is a cartoonized image. For example:
+
+![](https://i.imgur.com/Bbno5ZN.png)
+
+Due to computation limits cartoonizer part represented as temporary approach required for demo. It is supposed to be developed in the next time.
+
+We can see that after cartoonizing image looks more painted by hand, the result that we wanted it achieved.
+
