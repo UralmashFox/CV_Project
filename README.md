@@ -32,7 +32,7 @@ What do we have till now:
 ## Problems
 Unfortunately, we couldn't run git from source paper. It happened because of (1) too slow internet to download around 100 Gb of info and (2) there is no instruction about how to run the code.
 
-Text-to-scene algorithm was done from scratch by Marina. There is no Neural Networks, but, was done attempt to save the idea of authors of paper (make a code from text -> from code take image -> place and place in the background). Because of this unexpected task, following moving objects wasn't done yet.
+Text-to-scene algorithm was done from scratch by Marina. There is no Neural Networks, but, was done attempt to save the idea of authors of paper (make a code from text -> from code take image -> place images in the background). Because of this unexpected task, following moving objects wasn't done yet.
 
 However, by Albert was done GAN, making comic-book style of pictures. Till now, it needs some debugging process, but already we have some good results.
 
