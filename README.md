@@ -37,7 +37,9 @@ Text-to-scene algorithm was done from scratch by Marina. There is no Neural Netw
 However, by Albert was done GAN, making comic-book style of pictures. Till now, it needs some debugging process, but already we have some good results.
 
 ## Results
-You can check our git: [https://github.com/UralmashFox/CV_Project](https://github.com/UralmashFox/CV_Project)
+The code is there: [https://colab.research.google.com/drive/10a2mwlpcp9hURDLwGuWdUHrRVY88vnJO#scrollTo=Z3B6G3xFBbRm](https://colab.research.google.com/drive/10a2mwlpcp9hURDLwGuWdUHrRVY88vnJO#scrollTo=Z3B6G3xFBbRm)
+
+Also you can check our git: [https://github.com/UralmashFox/CV_Project](https://github.com/UralmashFox/CV_Project)
 there is "CV_project.ipynb" file. All you need is to open it (for example in collab), in the last cell input the desired text:
 ![](https://i.imgur.com/vwNFxII.png)
 
