@@ -21,13 +21,11 @@ In the end it could be done text-to-image work. For example, when ball appears i
 
 But to do all of this work we firstly have to be sure, that primary scripts from Git are workable.
 
-# Update (05.04.2020)
+# Update (26.04.2020)
 What do we have till now:
 - [x] literature review
 - [x] Text2Scene algorithm (NOT from paper)
-- [ ] Moving objects
 - [x] Comic-book style picture
-- [ ] Image-to-text work
 
 ## Problems
 Unfortunately, we couldn't run git from source paper. It happened because of (1) too slow internet to download around 100 Gb of info and (2) there is no instruction about how to run the code.
@@ -37,7 +35,7 @@ Text-to-scene algorithm was done from scratch by Marina. There is no Neural Netw
 However, by Albert was done GAN, making comic-book style of pictures. Till now, it needs some debugging process, but already we have some good results.
 
 ## Results
-The code is there: [https://colab.research.google.com/drive/10a2mwlpcp9hURDLwGuWdUHrRVY88vnJO#scrollTo=Z3B6G3xFBbRm](https://colab.research.google.com/drive/10a2mwlpcp9hURDLwGuWdUHrRVY88vnJO#scrollTo=Z3B6G3xFBbRm)
+The code is there: [https://colab.research.google.com/drive/10a2mwlpcp9hURDLwGuWdUHrRVY88vnJO#scrollTo=Z3B6G3xFBbRm](https://colab.research.google.com/drive/1KSDibUjz1tmz06ay0QpLAYxqS6udVUKE)
 
 Also you can check our git: [https://github.com/UralmashFox/CV_Project](https://github.com/UralmashFox/CV_Project)
 there is "CV_project.ipynb" file. All you need is to open it (for example in collab), in the last cell input the desired text:
@@ -78,8 +76,6 @@ In case to not overlap small objects by big
 *On the table there is a drink and hotdog*
 
 ![](https://i.imgur.com/d4954yd.png)
-
-The next step will be either finding out how to make the algorithm via networks or moving objects and making GIF file.
 
 Also when you run the code, in the end there is a cartoonized image. For example:
 
