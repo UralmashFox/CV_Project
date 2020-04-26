@@ -5,8 +5,8 @@
 ### Timeline with each member individual task:
 - 1st week: literature review and code investigation
 - 2nd week: object detection
-- 3rd week: object moving
-- 4th week: image to text
+- 3rd week: code creating
+- 4th week: cartoonizer
 - 5th week: presentation
 ### References: 
 [Original paper](http://openaccess.thecvf.com/content\_CVPR\_2019/papers/Tan\_Text2Scene\_Generating\_Compositional\_Scenes\_From\_Textual\_Descriptions\_CVPR\_2019\_paper.pdf), [their previous paper](http://openaccess.thecvf.com/content_iccv_2013/papers/Zitnick_Learning_the_Visual_2013_ICCV_paper.pdf)
@@ -21,7 +21,7 @@ In the end it could be done text-to-image work. For example, when ball appears i
 
 But to do all of this work we firstly have to be sure, that primary scripts from Git are workable.
 
-# Update (26.04.2020)
+# Final Update (26.04.2020)
 What do we have till now:
 - [x] literature review
 - [x] Text2Scene algorithm (NOT from paper)
@@ -107,24 +107,29 @@ Step by step:
 ### Given results of cartoonizng filter:
 Regretfully, we didn't get enough attention to a fact, that Abstract Scene Dataset is very abstract itself. So, there is no real sense in cartoonizing abstract images. But our filter works pretty good for another type of image. For our image this filter gives us a way more shape contours. You can see several examples here:
 
-![1a](https://github.com/levshaazz/CV_Project/blob/master/cartoonizer_examples/1a.png)
-Format: ![Iron Man and Warmachine before cartoonizing](url)
+![](https://i.imgur.com/rTBypzI.png)
 
-![1b](https://github.com/levshaazz/CV_Project/blob/master/cartoonizer_examples/1b.png)
-Format: ![Iron Man and Warmachine after cartoonizing](url)
+
+![](https://i.imgur.com/0FPwieX.png)
+
 
 Another examples:
 
-![1c](https://github.com/levshaazz/CV_Project/blob/master/cartoonizer_examples/1c.png)
-Format: ![Iron Man and Warmachine](url)
+![](https://i.imgur.com/C6fdBEm.png)
 
-![2c](https://github.com/levshaazz/CV_Project/blob/master/cartoonizer_examples/2c.png)
-Format: ![Just a city corner](url)
 
-![3c](https://github.com/levshaazz/CV_Project/blob/master/cartoonizer_examples/3c.png)
-Format: ![Falcon Heavy's rocket boosters landing](url)
+![](https://i.imgur.com/XzC2AvX.png)
+
+
+![](https://i.imgur.com/nrKUBpx.png)
+
 
 Due to computation limits cartoonizer part represented as temporary approach required for demo. It is supposed to be developed in the next time
 
 We can see that after cartoonizing image looks more painted by hand, the result that we wanted is achieved.
 
+# Conclusion 
+
+Due to doing this project we met some problems in case to modify the goal and some tasks. In the end we have workable code from scratch that realizes most tasks which we planed.
+
+If you're going to modify the text, PLEASE run *run all* only ONCE! When modifying text - change it and run only LAST cell! Thanks.
