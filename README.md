@@ -85,7 +85,50 @@ Also when you run the code, in the end there is a cartoonized image. For example
 
 ![](https://i.imgur.com/Bbno5ZN.png)
 
-Due to computation limits cartoonizer part represented as temporary approach required for demo. It is supposed to be developed in the next time.
+### Part2: Cartoonizing filter:
+In the beginning, we wanted to create GAN, which will generate comics-like images from the images we get from the text2image part. Regretfully, we failed on this part. Mostly because of computation complexity and my personal (Albert's) lack of expertise in Generative Adversarial Network. Also, we realized a GAN approach is overcomplicated for our goals. So, we decided to create a filter based on classical Computer Vision methods.
+
+We could've to use a pre-trained model for cartoonizing, but it doesn't sound like fun. Isn't it? So, we have spent most of our time trying to make the GAN works but failed. I will be happy to try it one more time during the summer holidays.
+
+### How cartoonizing filter works?
+Papers and articles we found useful in this work:
+- [Learning the K in K-Means](https://www.researchgate.net/publication/2869155_Learning_the_K_in_K-Means),
+- [Converting Color Real Image to Cartoon Image Using NonParametric Mean-Shift Technique](https://www.iasj.net/iasj?func=fulltext&aId=65525),
+- [Introduction to Image Segmentation with K-Means clustering](https://towardsdatascience.com/introduction-to-image-segmentation-with-k-means-clustering-83fd0a9e2fc3),
+- [Color Quantization with OpenCV using K-Means Clustering](https://www.pyimagesearch.com/2014/07/07/color-quantization-opencv-using-k-means-clustering/),
+- [Learn How To Do K-Means Clustering On An Image](https://laconicml.com/k-means-clustering/),
+- [OpenCV with Python By Example](https://learning.oreilly.com/library/view/opencv-with-python/9781785283932/);
+
+Step by step:
+- to create histogram for given image,
+- to find centroid,
+- to update centroids as long as they won't stop changing,
+- to choose minimum group size, alpha value to get the best value of k,
+- to calculate values of H, S and V,
+- to extract contours,
+- to fill contours with calculated H, S, V; 
+
+### Given results of cartoonizng filter:
+Regretfully, we didn't get enough attention to a fact, that Abstract Scene Dataset is very abstract itself. So, there is no real sense in cartoonizing abstract images. But our filter works pretty good for another type of image. For our image this filter gives us a way more shape contours. You can see several examples here:
+
+![1a](https://github.com/levshaazz/CV_Project/blob/master/cartoonizer_examples/1a.png)
+Format: ![Iron Man and Warmachine before cartoonizing](url)
+
+![1b](https://github.com/levshaazz/CV_Project/blob/master/cartoonizer_examples/1b.png)
+Format: ![Iron Man and Warmachine after cartoonizing](url)
+
+Another examples:
+
+![1c](https://github.com/levshaazz/CV_Project/blob/master/cartoonizer_examples/1c.png)
+Format: ![Iron Man and Warmachine](url)
+
+![2c](https://github.com/levshaazz/CV_Project/blob/master/cartoonizer_examples/2c.png)
+Format: ![Just a city corner](url)
+
+![3c](https://github.com/levshaazz/CV_Project/blob/master/cartoonizer_examples/3c.png)
+Format: ![Falcon Heavy's rocket boosters landing](url)
+
+Due to computation limits cartoonizer part represented as temporary approach required for demo. It is supposed to be developed in the next time
 
 We can see that after cartoonizing image looks more painted by hand, the result that we wanted is achieved.
 
